@@ -37,6 +37,6 @@ class TasksController < ApplicationController
 	private
 
   def tasks_params
-    params.require(:task).permit(:title, :detail) # :task fait appel à quoi?
+    params.require(:task).permit(:title, :detail, :completed) # :task fait appel à quoi?
   end
 end
