@@ -1,0 +1,11 @@
+<h1>Show</h1>
+
+<%= @task.title %>
+<br>
+<%= @task.detail %>
+<br>
+<%= @task.completed %>
+<br>
+<%= link_to 'Edit !', edit_path(@task) %>
+<br>
+<%= link_to "Back to index", tasks_path %>

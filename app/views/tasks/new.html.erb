@@ -1,0 +1,15 @@
+<h1>Create</h1>
+
+<%= form_for (@task) do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<br>
+	<br>
+	<%= f.label :detail %>
+  <%= f.text_field :detail %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
+<br>
+<%= link_to "Back to index", tasks_path %>
